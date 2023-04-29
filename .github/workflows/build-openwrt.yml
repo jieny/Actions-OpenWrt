@@ -18,6 +18,10 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+      remark:
+        description: '添加备注'
+        required: false
+        default: ''
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -40,6 +44,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
+
+    - name: remark
+      run: |
+        echo "Remark: ${{ inputs.remark }}"
 
     - name: Initialization environment
       env:
