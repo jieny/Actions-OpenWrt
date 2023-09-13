@@ -11,4 +11,4 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/172.18.8.193/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/172.18.8.193/g' package/base-files/files/bin/config_generate
